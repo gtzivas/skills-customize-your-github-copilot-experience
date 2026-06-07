@@ -72,6 +72,30 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "frontend-assignment-cards",
+      "title": "Frontend Foundations - Student Assignment Cards",
+      "description": "Build a beginner-friendly webpage using HTML and CSS to present assignment cards.",
+      "path": "assignments/frontend-assignment-cards",
+      "dueDate": "2026-06-14",
+      "attachments": [
+        {
+          "name": "Starter HTML",
+          "file": "starter-page.html",
+          "type": "html"
+        },
+        {
+          "name": "Starter CSS",
+          "file": "styles.css",
+          "type": "css"
+        },
+        {
+          "name": "Completed Example",
+          "file": "completed-page.html",
+          "type": "html"
+        }
+      ]
     }
   ]
 }

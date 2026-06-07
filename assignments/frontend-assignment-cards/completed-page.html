@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Assignment Cards - Completed Example</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --accent: #2563eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, #eef3ff 0%, var(--bg) 35%, #f8fafc 100%);
+        color: var(--text);
+      }
+
+      .page-header {
+        text-align: center;
+        padding: 2.25rem 1rem 1.25rem;
+      }
+
+      .page-header h1 {
+        margin: 0 0 0.4rem;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+      }
+
+      .page-header p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .cards-grid {
+        width: min(980px, 92%);
+        margin: 0 auto 2.2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+
+      .assignment-card {
+        background: var(--surface);
+        border-radius: 14px;
+        padding: 1rem;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+        border: 1px solid #e5e7eb;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+
+      .assignment-card:hover {
+        transform: translateY(-5px);
+        border-color: #c7d2fe;
+        box-shadow: 0 14px 26px rgba(15, 23, 42, 0.14);
+      }
+
+      .assignment-card h2 {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .assignment-card p {
+        margin: 0.65rem 0;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+
+      .due-date {
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .tag {
+        font-size: 0.78rem;
+        background: #dbeafe;
+        color: #1d4ed8;
+        padding: 0.22rem 0.55rem;
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Student Assignment Portal</h1>
+      <p>Completed example: semantic card layout with responsive design and hover effects.</p>
+    </header>
+
+    <main class="cards-grid">
+      <article class="assignment-card">
+        <h2>Python Basics Review</h2>
+        <p>Practice variables, loops, and conditionals through short coding exercises.</p>
+        <div class="meta">
+          <span class="due-date">Due: June 20</span>
+          <span class="tag">Beginner</span>
+        </div>
+      </article>
+
+      <article class="assignment-card">
+        <h2>Class Design Challenge</h2>
+        <p>Design a class with attributes and methods, then test it with two objects.</p>
+        <div class="meta">
+          <span class="due-date">Due: June 24</span>
+          <span class="tag">Intermediate</span>
+        </div>
+      </article>
+
+      <article class="assignment-card">
+        <h2>Data Visualization Mini-Lab</h2>
+        <p>Read sample data and summarize trends using simple visual outputs.</p>
+        <div class="meta">
+          <span class="due-date">Due: June 28</span>
+          <span class="tag">Intermediate</span>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
